@@ -5,12 +5,14 @@
     <script language="javascript" src="serverDate.js"></script>
   </head>
   <script language="javascript">
-  var localTime = new Date();
-    document.write("{}<br>");
-    2022-01-30T21:32:20.097470+07:00
-    document.write("&tab;datetime:" + date.getYear() + "-" + date.getMonth() + "-" + date.getDate() + "T" + date.getHour() + "-" + date.getMinute() + "-" + date.getSecond() + "<br>");
-    document.write("&tab;unixtime:" + date.getTime() + "<br>");
-    document.write("<br>}");
+
+	var data = {};
+	data.datetime = date.toJSON();
+	data.unixtime = date.getTime();
+	
+	const myJSON = JSON.stringify(data);
+	document.write(myJSON)
+	
   </script>
   <body>
   </body>
