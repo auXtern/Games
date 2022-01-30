@@ -6,8 +6,11 @@
   </head>
   <script language="javascript">
   var localTime = new Date();
-  document.write("Local machine time is: " + localTime + "<br>");
-  document.write("Server time is: " + date);
+    document.write("{}<br>");
+    2022-01-30T21:32:20.097470+07:00
+    document.write("&tab;datetime:" + date.getYear() + "-" + date.getMonth() + "-" + date.getDate() + "T" + date.getHour() + "-" + date.getMinute() + "-" + date.getSecond() + "<br>");
+    document.write("&tab;unixtime:" + date.getTime() + "<br>");
+    document.write("<br>}");
   </script>
   <body>
   </body>
